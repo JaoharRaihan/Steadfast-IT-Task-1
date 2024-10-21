@@ -10,3 +10,45 @@ body, html {
 * {
     box-sizing: border-box;
 }
+.navbar {
+    background: #333;
+    color: white;
+    padding: 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-links {
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile Navigation Toggle */
+.mobile-nav-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-links.active {
+    display: block;
+}
